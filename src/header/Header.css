@@ -1,0 +1,34 @@
+.NavHeader {
+    min-width: 1080px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+
+#headerTitle {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.userInfoArea {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.userInfo {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#userName {
+    margin: 0 auto;
+}
+
+#userID {
+    margin: 0 auto;
+}
