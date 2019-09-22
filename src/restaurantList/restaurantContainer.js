@@ -6,8 +6,9 @@ class RestaurantContainer extends Component{
 
     render(){
         return(
+            
             <Segment>
-                <ServiceContainer/>
+                <ServiceContainer isOnService={true} />
                 {/* <Divider horizontal>or</Divider> */}
                 <ServiceContainer/>
             </Segment>
