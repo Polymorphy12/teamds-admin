@@ -3,14 +3,32 @@ import ServiceContainer from './serviceContainer';
 import {Container, Divider, Segment} from 'semantic-ui-react'
 
 class RestaurantContainer extends Component{
-
+    
+    
     render(){
-        return(
+        var onService =[];
+        var notOnService = [];
+
+        for(var i = 0; i < 10; i++)
+        {
+            var obj = {
+                restaurantName : '음식점'+i
+            };
             
+            if(i%2 ==0){
+                onService.push(obj);
+            }
+            else{
+                notOnService.push(obj);
+            }
+        }
+        
+        console.log(onService, notOnService);
+        return(
             <Segment>
-                <ServiceContainer isOnService={true} />
+                <ServiceContainer isOnService={true} restaurantInfo={onService} />
                 {/* <Divider horizontal>or</Divider> */}
-                <ServiceContainer/>
+                <ServiceContainer isOnService={false} restaurantInfo={notOnService}/>
             </Segment>
         );
     }
