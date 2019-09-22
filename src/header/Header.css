@@ -18,11 +18,21 @@
     flex-direction: row;
 }
 
+@media (min-width: 1080px) {
+    .userInfoArea {
+        right: 0px;
+    }
+}
+
 .userInfo {
     width: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.ui.fade.animated.button.userInfoUpdate {
+    margin: 0;
 }
 
 #userName {
