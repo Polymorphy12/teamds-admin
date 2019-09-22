@@ -1,0 +1,44 @@
+.NavHeader {
+    min-width: 1080px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+
+#headerTitle {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.userInfoArea {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 1080px) {
+    .userInfoArea {
+        right: 0px;
+    }
+}
+
+.userInfo {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ui.fade.animated.button.userInfoUpdate {
+    margin: 0;
+}
+
+#userName {
+    margin: 0 auto;
+}
+
+#userID {
+    margin: 0 auto;
+}
